@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=0, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>KAZI'S FAVOURITE ANIME CHARACTERS</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css">
+	<script type='text/javascript' src='js/mobile.js'></script>
+</head>
+<body>
+	<script>
+            window.alert("Weclome Professor");
+            </script>
+	<div id="header">
+		<h1><a href="index.html">KAZI'S <span>FAVOURITE ANIME CHARACTERS</span></a></h1>
+		<ul id="navigation">
+			<li class="current">
+				<a href="index.html">Home</a>
+			</li>
+			<li>
+				<a href="about.html">About</a>
+			</li>
+			<li>
+				<a href="contact.html">Contact</a>
+			</li>
+			<li>
+				<a href="blog.html">Blog</a>
+			</li>
+		</ul>
+	</div>
+	<!-- Add this near the top of your index.html, like in the header or right after the main title -->
+<div style="background-color: #f8f9fa; padding: 10px; text-align: center; border: 1px solid #ddd; margin: 10px 0;">
+    <p style="margin: 0; font-weight: bold;">
+        📝 This website was created from a free template: 
+        <a href="https://freewebsitetemplates.com/preview/rehabilitation-yoga/index.html" 
+           target="_blank" 
+           style="color: #0066cc; text-decoration: underline;">
+            View Original Template
+        </a>
+    </p>
+</div>
+<div style="text-align: center; padding: 20px; background: #f5f7fa; border-radius: 8px; margin: 20px auto; max-width: 450px; border: 1px solid #ddd;">
+    <h3 style="margin: 0 0 10px 0; color: #333;">Anime Character Quiz</h3>
+    <p style="color: #666; margin-bottom: 15px; font-size: 14px;">Find out which character you're most like!</p>
+    
+    <div style="margin: 15px 0; padding: 10px; background: white; border-radius: 6px;">
+        <div style="display: flex; justify-content: center; gap: 10px; margin-bottom: 10px;">
+            <span style="padding: 5px; background: #e8f4fc; border-radius: 4px;">👑 Albedo</span>
+            <span style="padding: 5px; background: #f3e8fd; border-radius: 4px;">🧙‍♀️ Frieren</span>
+            <span style="padding: 5px; background: #ffe8e8; border-radius: 4px;">🌊 Luffy</span>
+            <span style="padding: 5px; background: #fff3e8; border-radius: 4px;">⛓️ Denji</span>
+        </div>
+    </div>
+    
+    <button onclick="runQuiz()" style="background: #4a6fa5; color: white; padding: 12px 30px; border: none; border-radius: 4px; font-size: 16px; cursor: pointer; margin: 10px 0;">
+        Start Quiz
+    </button>
+    
+    <div id="quizResult" style="margin-top: 20px;"></div>
+</div>
+
+<script>
+function runQuiz() {
+    // Question 1
+    let q1 = prompt("1. How do you approach challenges?\nA) With total loyalty to my goals\nB) Calmly and patiently\nC) Head-on with excitement\nD) Just trying to survive\n\nEnter A, B, C, or D:");
+    
+    if (q1 === null) return;
+    
+    // Question 2
+    let q2 = prompt("2. What do you value most?\nA) Devotion to someone special\nB) Knowledge and memories\nC) Freedom and adventure\nD) Simple daily comforts\n\nEnter A, B, C, or D:");
+    
+    if (q2 === null) return;
+    
+    // Question 3
+    let q3 = prompt("3. How do others see you?\nA) Serious and devoted\nB) Wise and thoughtful\nC) Energetic and fun\nD) Straightforward and honest\n\nEnter A, B, C, or D:");
+    
+    if (q3 === null) return;
+    
+    // Convert to uppercase
+    q1 = q1.toUpperCase();
+    q2 = q2.toUpperCase();
+    q3 = q3.toUpperCase();
+    
+    // Count answers
+    let aCount = 0, bCount = 0, cCount = 0, dCount = 0;
+    
+    if (q1 === 'A') aCount++;
+    if (q1 === 'B') bCount++;
+    if (q1 === 'C') cCount++;
+    if (q1 === 'D') dCount++;
+    
+    if (q2 === 'A') aCount++;
+    if (q2 === 'B') bCount++;
+    if (q2 === 'C') cCount++;
+    if (q2 === 'D') dCount++;
+    
+    if (q3 === 'A') aCount++;
+    if (q3 === 'B') bCount++;
+    if (q3 === 'C') cCount++;
+    if (q3 === 'D') dCount++;
+    
+    // Find highest score
+    let scores = [aCount, bCount, cCount, dCount];
+    let maxScore = Math.max(...scores);
+    
+    let character = "";
+    let description = "";
+    let icon = "";
+    let color = "";
+    
+    if (aCount === maxScore) {
+        character = "Albedo (Overlord)";
+        description = "You're loyal and devoted like Albedo! You take your commitments seriously and protect what's important to you.";
+        icon = "👑";
+        color = "#4a90e2";
+    } else if (bCount === maxScore) {
+        character = "Frieren";
+        description = "You're calm and thoughtful like Frieren! You appreciate taking your time and value learning from experiences.";
+        icon = "🧙‍♀️";
+        color = "#9b59b6";
+    } else if (cCount === maxScore) {
+        character = "Luffy (One Piece)";
+        description = "You're adventurous and free-spirited like Luffy! You follow your dreams and value freedom above all.";
+        icon = "🌊";
+        color = "#e74c3c";
+    } else {
+        character = "Denji (Chainsaw Man)";
+        description = "You're straightforward and resilient like Denji! You appreciate life's simple pleasures and keep moving forward.";
+        icon = "⛓️";
+        color = "#f39c12";
+    }
+    
+    // Show result
+    const resultDiv = document.getElementById('quizResult');
+    resultDiv.innerHTML = `
+        <div style="background: white; padding: 15px; border-radius: 6px; border-left: 4px solid ${color}; margin-top: 15px;">
+            <div style="font-size: 24px;">${icon}</div>
+            <h4 style="margin: 10px 0 5px 0; color: ${color};">${character}</h4>
+            <p style="color: #555; margin: 0 0 15px 0; font-size: 14px;">${description}</p>
+            <button onclick="resetQuiz()" style="background: ${color}; color: white; padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer; font-size: 14px;">
+                Try Again
+            </button>
+        </div>
+    `;
+}
+
+function resetQuiz() {
+    document.getElementById('quizResult').innerHTML = "";
+}
+</script>
+	<div id="body">
+		<div id="tagline">
+			<h1>ANIMES</h1>
+			<p>
+				WHERE IMAGINATION BECOMES REALITY
+			</p>
+			
+		</div>
+		<img src="c:\Users\user\Downloads\rehabilitation-yoga\rehabilitation-yoga\upload\images\Luffy-gear-5.jpg" alt="Luffy-gear-5" class="figure">
+	</div>
+<div style="border: 3px solid #4a90e2; border-radius: 15px; padding: 25px; margin: 25px 0; 
+            background: linear-gradient(to bottom, #ffffff, #f0f8ff); 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+    
+    <div style="text-align: center; border-bottom: 2px solid #ff6b6b; padding-bottom: 15px; margin-bottom: 15px;">
+        <h2 style="color: #ff6b6b; margin: 0 0 10px 0;">
+            <span style="font-size: 24px;">🎌</span> ANIME ENTHUSIAST <span style="font-size: 24px;">🎌</span>
+        </h2>
+    </div>
+    
+    <div style="text-align: center; margin-bottom: 20px;">
+        <p style="font-size: 18px; margin: 10px 0;">
+            <strong>👤 Name:</strong> SAJID KAZI YASIN
+        </p>
+        <p style="font-size: 18px; margin: 10px 0;">
+            <strong>🎓 ID:</strong> 25224558
+        </p>
+        <p style="font-size: 16px; color: #666; font-style: italic; margin: 15px 0;">
+            Exploring the wonderful world of Japanese animation!
+        </p>
+    </div>
+</div>
+	<div id="footer">
+		<div>
+			<span>25224558</span>
+			<p>
+				 SAJID KAZI YASIN
+			</p>
+		</div>
+		<div id="connect">
+			<a href="https://freewebsitetemplates.com/go/facebook/" id="facebook" target="_blank">Facebook</a>
+			<a href="https://freewebsitetemplates.com/go/twitter/" id="twitter" target="_blank">Twitter</a>
+			<a href="https://freewebsitetemplates.com/go/googleplus/" id="googleplus" target="_blank">Google&#43;</a>
+			<a href="https://freewebsitetemplates.com/go/pinterest/" id="pinterest" target="_blank">Pinterest</a>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=0, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>KAZI'S FAVOURITE ANIME CHARACTERS</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css">
+	<script type='text/javascript' src='js/mobile.js'></script>
+</head>
+<body>
+	<div id="header">
+		<h1><a href="index.html">KAZI'S <span>FAVOURITE ANIME CHARACTERS</span></a></h1>
+		<ul id="navigation">
+			<li>
+				<a href="index.html">Home</a>
+			</li>
+			<li>
+				<a href="about.html">About</a>
+			</li>
+			<li class="current">
+				<a href="contact.html">Contact</a>
+			</li>
+			<li>
+				<a href="blog.html">Blog</a>
+			</li>
+		</ul>
+	</div>
+	<div class="contact-section">
+    <h2>📬 Contact Me</h2>
+    
+    <p class="contact-intro">I love talking about anime! Whether you want to recommend a series, discuss characters, or just say hello, feel free to reach out!</p>
+    
+    <div class="contact-info">
+        <div class="contact-item">
+            <span class="icon">📧</span>
+            <div>
+                <strong>Email</strong>
+                <p>myanimepage@email.com</p>
+            </div>
+        </div>
+        
+        <div class="contact-item">
+            <span class="icon">💬</span>
+            <div>
+                <strong>Discord</strong>
+                <p>AnimeLover#1234</p>
+            </div>
+        </div>
+        
+        <div class="contact-item">
+            <span class="icon">🐦</span>
+            <div>
+                <strong>Twitter</strong>
+                <p>@AnimeFanPage</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="response-note">
+        <p>⏰ Usually respond within 24 hours<br><small>(unless I'm binge-watching!)</small></p>
+    </div>
+    
+    <!-- Optional: Add a simple message button -->
+    <button class="message-btn" onclick="sendQuickMessage()">💌 Send Quick Message</button>
+</div>
+
+<style>
+.contact-section {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact-section h2 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.contact-intro {
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+.contact-info {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #e9ecef;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.contact-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.contact-item .icon {
+    font-size: 20px;
+    margin-right: 15px;
+    width: 30px;
+    text-align: center;
+}
+
+.contact-item strong {
+    display: block;
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+.contact-item p {
+    margin: 0;
+    color: #666;
+    font-size: 15px;
+}
+
+.response-note {
+    background: #e7f3ff;
+    border-radius: 8px;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-left: 4px solid #2196f3;
+}
+
+.response-note p {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 14px;
+}
+
+.response-note small {
+    color: #7f8c8d;
+    font-size: 13px;
+}
+
+.message-btn {
+    display: block;
+    width: 100%;
+    background: linear-gradient(to right, #ff6b6b, #ff8e53);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.message-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(255,107,107,0.2);
+}
+</style>
+
+<script>
+function sendQuickMessage() {
+    const name = prompt("What's your name (or anime alias)?", "Anime Fan");
+    
+    if (name) {
+        const message = prompt("What would you like to say to me?", "Hi! I love your anime website!");
+        
+        if (message) {
+            alert(`🎌 Thanks ${name}! \n\nYour message: "${message}" \n\nI'll respond to you soon! Check your email for my reply.`);
+        }
+    }
+}
+</script>
+	<div id="footer">
+		<div>
+			<span>25224558</span>
+			<p>
+				SAJID KAZI YASIN
+			</p>
+		</div>
+		<div id="connect">
+			<a href="https://freewebsitetemplates.com/go/facebook/" id="facebook" target="_blank">Facebook</a>
+			<a href="https://freewebsitetemplates.com/go/twitter/" id="twitter" target="_blank">Twitter</a>
+			<a href="https://freewebsitetemplates.com/go/googleplus/" id="googleplus" target="_blank">Google&#43;</a>
+			<a href="https://freewebsitetemplates.com/go/pinterest/" id="pinterest" target="_blank">Pinterest</a>
+		</div>
+	</div>
+</body>
+</html>
